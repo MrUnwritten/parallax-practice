@@ -1,20 +1,154 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- link stylesheet -->
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Alegreya:ital,wght@1,700&display=swap" rel="stylesheet">  
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/6f231be1f6.js" crossorigin="anonymous"></script>
+  <!-- webpage title -->
+  <title>The Rising of the Shield Hero</title>
+</head>
+<body>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/styles.css">
+  <!-- first parallax w/ navbar-->
+  <div class="parallax container-fluid" id="para_one">
+    <!-- navbar -->
+    <div class="navbar_container">
+      <nav class="navbar navbar-expand-xxxl navbar-dark">
+        <div class="container-fluid">
+          <!-- left text of nav bar -->
+          <a class="navbar-brand text-white fs-2 fw-bold" href="#para_one">The Rising of the Shield Hero</a>
+          <!-- toggler on right side -->
+          <button class="navbar-toggler btn-circle btn-md bg-secondary bg-opacity-50" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- switched default span icon w/ bars (hamburger) from fa -->
+            <i class="fas fa-bars fa-md text-white"></i>
+          </button>
+          <!-- navigation items container (shows when toggled) -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- nav items -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 fw-bold" href="#para_two">Shield Hero</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 fw-bold" href="#para_three">Spear Hero</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 fw-bold" href="#para_four">Sword Hero</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fs-4 fw-bold" href="#para_five">Bow Hero</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- container for text+button -->
+    <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+      <h1 class="display-1 fw-bold textone mt-auto opacity-75 p-3" id="para_one_header">The Rising of the Shield Hero</h1>
+      <!-- button to move to next parallax -->
+      <div class="button_container mt-auto mb-4">
+        <a class="btn btn-circle btn-md bg-secondary bg-opacity-50" href="#para_two"><i class="fas fa-chevron-down fa-lg mt-2 text-white"></i></a>
+      </div>
+    </div>
+  </div>
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <!-- second parallax -->
+  <div class="parallax p-4 container-fluid" id="para_two">
+    <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+      <!-- container for text+buttons and give it a background for readability -->
+      <div class="d-flex flex-column align-items-center mt-auto bg-dark p-5 bg-opacity-75">
+        <h1 class="title_text display-6 fw-bold textone text-uppercase">Shield Hero</h1>
+        <p class="fs-4 text-muted">First Hero</p>
+        <p class="fs-5 text-white mb-4">The Shield Hero was the most important but misunderstood Hero betrayed by the country he was summoned by.</p>
+        <button class="btn btn-lg btn-outline-secondary text-uppercase text-white mt-2">learn more</button>
+      </div>
+      <!-- next para button -->
+      <div class="button_container mt-auto"></div>
+        <a class="btn btn-circle btn-md bg-secondary bg-opacity-50" href="#para_three"><i class="fas fa-chevron-down fa-lg mt-2 text-white"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- third parallax -->
+  <div class="parallax p-4 container-fluid" id="para_three">
+    <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+      <!-- text+buttons container w/ background -->
+      <div class="d-flex flex-column align-items-center mt-auto bg-dark p-5 bg-opacity-75">
+        <h1 class="title_text display-6 fw-bold textone text-uppercase">Spear Hero</h1>
+        <p class="fs-4 text-muted">Second Hero</p>
+        <p class="fs-5 text-white mb-4">The Spear Hero was the first to assume the shield hero was evil because of how easy he was able to be manipulated.</p>
+        <button class="btn btn-lg btn-outline-secondary text-uppercase text-white mt-2">learn more</button>
+      </div>
+      <!-- next para button -->
+      <div class="button_container mt-auto"></div>
+        <a class="btn btn-circle btn-md bg-secondary bg-opacity-50" href="#para_four"><i class="fas fa-chevron-down fa-lg mt-2 text-white"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- fourth parallax -->
+  <div class="parallax p-4 container-fluid" id="para_four">
+    <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+      <!-- text+buttons container w/ background -->
+      <div class="d-flex flex-column align-items-center mt-auto bg-dark p-5 bg-opacity-75">
+        <h1 class="title_text display-6 fw-bold textone text-uppercase">Sword Hero</h1>
+        <p class="fs-4 text-muted">Third Hero</p>
+        <p class="fs-5 text-white mb-4">The Sword hero treated everything like a game and did not understand the consequences of his actions.</p>
+        <button class="btn btn-lg btn-outline-secondary text-uppercase text-white mt-2">learn more</button>
+      </div>
+      <!-- next para button -->
+      <div class="button_container mt-auto"></div>
+        <a class="btn btn-circle btn-md bg-secondary bg-opacity-50" href="#para_five"><i class="fas fa-chevron-down fa-lg mt-2 text-white"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- fifth parallax -->
+  <div class="parallax container-fluid" id="para_five">
+    <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
+      <!-- text+buttons container w/ background -->
+      <div class="d-flex flex-column align-items-center mt-auto mb-auto bg-dark p-5 bg-opacity-75">
+        <h1 class="title_text display-6 fw-bold textone text-uppercase">Bow Hero</h1>
+        <p class="fs-4 text-muted">Fourth Hero</p>
+        <p class="fs-5 text-white">The Bow Hero jkust wanted to be a vigilante and only cared about fame and fortune.</p>
+        <button class="btn btn-lg btn-outline-secondary text-uppercase text-white mt-2">learn more</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid bg-danger p-5">
+      <div class="d-flex flex-column justify-content-center align-items-center p-4 mt-3">
+        <h2 class="display-6 fw-bold text-uppercase text-white">contact</h2>
+        <!-- socials, direct to social landing page -->
+        <div class="socials d-flex flex-row gap-4 p-5 mt-3">
+          <a class="btn btn-circle btn-xl bg-white bg-opacity-25" href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-lg"></i></a>
+          <a class="btn btn-circle btn-xl bg-white bg-opacity-25" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f fa-lg"></i></a>
+          <a class="btn btn-circle btn-xl bg-white bg-opacity-25" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+        <!-- copyright segment w/ clickable reference links and functionality to unsplash. is templated suppose to be a link? -->
+        <p>
+          <span class="text-white opacity-50">&copy; MrUnwritten. Design</span>
+          <a class="text-white" href="#" onclick="return false;">templated</a>
+          <span class="text-white opacity-50">. Images:</span>
+          <a class="text-white" href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a>
+          <span class="text-white opacity-50">.</span>
+        </p>
+      </div>
+  </footer>
+
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
